@@ -8,6 +8,13 @@ const subhanallaResetBtn = document.getElementById('startOver');
 const inputValue = document.getElementById('inputValueSubhanallah');
 
 
+// input value output
+
+const inputOutput = document.getElementById('inputValueOutput');
+
+inputOutput.innerText = inputNumber;
+
+
 const alhamdulillahBtn = document.getElementById('alhamdulillah_count');
 
 
@@ -26,11 +33,14 @@ let totalCount = subhanallaCountValue + alhamdulillahCountvalue + allahuakbarCou
 
 // document.getElementById('totalCounter').innerText = totalCount;
 
-const totalValue= document.getElementById('')
+const totalValue = document.getElementById('')
 subhanallaBtn.addEventListener('click', function () {
     subhanallaCountValue += 1;
     subhanallahCountDisplay.innerText = subhanallaCountValue;
     totalCount.innerText = subhanallaCountValue;
+    const inputNumber = parseInt(inputValue.value);
+
+
 })
 
 subhanallaResetBtn.addEventListener('click', function () {
