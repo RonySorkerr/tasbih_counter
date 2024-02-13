@@ -1,11 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- cdns -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Tasbih Counter</title>
 </head>
-<body>
-    
+
+<body class="container mx-auto">
+    <div class="">
+        <div class="text-center my-20">
+            <label for="" id="count_level" class="w-full h-1/2 bg-[#00b2e9] text-white p-2 text-5xl rounded-3xl">TOTAL TASBIH COUNTED :  <span id="totalCounter">0</span> </label>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-6">
+            <!-- subhanallah -->
+            <div class="card bg-base-100 shadow-xl">
+                <figure id="counting_items" class="bg-red-400 p-4 mx-auto text-white text-3xl">
+                    0
+                </figure>
+                <figure class="px-10 pt-10">
+                  <img src="img/subahanallah.png!bw700" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Subhanallah!</h2>
+                  <p>Allah is Perfect</p>
+                  <div class="card-actions">
+                    <button class="btn btn-secondary">Count</button>
+                  </div>
+                </div>
+              </div>
+              <!-- alhamdulillah -->
+              <div class="card bg-base-100 shadow-xl">
+                <figure id="counting_items" class="bg-red-400 p-4 mx-auto text-white text-3xl">
+                    0
+                </figure>
+                <figure class="px-10 pt-10">
+                  <img src="img/alhamdulillah.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Alhamdulillah!</h2>
+                  <p>praise be to God</p>
+                  <div class="card-actions">
+                    <button class="btn btn-secondary">Count</button>
+                  </div>
+                </div>
+              </div>
+              <!-- allahuakbar -->
+              <div class="card bg-base-100 shadow-xl">
+                <figure id="counting_items" class="bg-red-400 p-4 mx-auto text-white text-3xl">
+                    0
+                </figure>
+                <figure class="px-10 pt-10">
+                  <img src="img/Allahu_Akbar_Thuluth.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Allahu Akbar!</h2>
+                  <p>God is greater</p>
+                  <div class="card-actions">
+                    <button class="btn btn-secondary">Count</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>
