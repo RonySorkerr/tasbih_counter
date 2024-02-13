@@ -1,24 +1,39 @@
-let countSubahanallah = 0;
-let countalhamdulillah = 0;
-let countallahuakbar = 0;
+const subhanallaBtn = document.getElementById('Subhanallah_Counter');
+
+const subhanallahCountDisplay = document.getElementById('counting_items_sbhn');
+
+const alhamdulillahBtn = document.getElementById('alhamdulillah_count');
+
+const alhamdulillahCountDisplay = document.getElementById('counting_items_alhm');
 
 
+const allahuakbarBtn = document.getElementById('count_allahuakbar');
 
-// subahanallah counter
+const allahuakbarCountDisplay = document.getElementById('counting_items_allahuakbar');
 
-document.getElementById('Subhanallah_Counter').onclick = function(){
-    countSubahanallah+=1;    
-    document.getElementById('counting_items').innerText = count;    
-} 
+let subhanallaCountValue = 0;
+let alhamdulillahCountvalue = 0;
+let allahuakbarCountValue = 0;
 
-document.getElementById('alhamdulillah_count').addEventListener('click', function(){
-    countalhamdulillah += 1;
-    document.getElementById('counting_items_alhm').innerText = count;
+let totalCount = subhanallaCountValue+ alhamdulillahCountvalue+ allahuakbarCountValue;
+
+document.getElementById('totalCounter').innerText = totalCount;
+
+subhanallaBtn.addEventListener('click', function(){
+    subhanallaCountValue += 1;
+    subhanallahCountDisplay.innerText = subhanallaCountValue;
+    totalCount.innerText = subhanallaCountValue;
 })
 
-document.getElementById('count_allahuakbar').addEventListener('click', function(){
-    countallahuakbar += 1;
-    document.getElementById('counting_items_allahuakbar').innerText = count;
+alhamdulillahBtn.addEventListener('click', function(){
+    alhamdulillahCountvalue += 1;
+    alhamdulillahCountDisplay.innerText = alhamdulillahCountvalue;
+    totalCount.innerText = alhamdulillahCountvalue;
 })
 
-// document.getElementById('totalCounter').innerText = count;
+allahuakbarBtn.addEventListener('click', function(){
+    allahuakbarCountValue += 1;
+    allahuakbarCountDisplay.innerText = allahuakbarCountValue;
+})
+
+totalCount = subhanallaCountValue+ alhamdulillahCountvalue+ allahuakbarCountValue;
