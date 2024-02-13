@@ -1,17 +1,24 @@
-let count = 0;
+let countSubahanallah = 0;
+let countalhamdulillah = 0;
+let countallahuakbar = 0;
 
 
 
 // subahanallah counter
 
 document.getElementById('Subhanallah_Counter').onclick = function(){
-    count+=1;
-    
-    // will show the total count
-    const totalCount = document.getElementById(count);
-    // totalCount = count;
-    
-    document.getElementById('counting_items').innerText = count;
-    
+    countSubahanallah+=1;    
+    document.getElementById('counting_items').innerText = count;    
 } 
 
+document.getElementById('alhamdulillah_count').addEventListener('click', function(){
+    countalhamdulillah += 1;
+    document.getElementById('counting_items_alhm').innerText = count;
+})
+
+document.getElementById('count_allahuakbar').addEventListener('click', function(){
+    countallahuakbar += 1;
+    document.getElementById('counting_items_allahuakbar').innerText = count;
+})
+
+// document.getElementById('totalCounter').innerText = count;
